@@ -23,3 +23,18 @@ Gồm các thành phần:
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+```
+
+### 3️⃣ Tạo file .env trong thư mục backend/
+Trong thư mục backend, tạo file tên là .env và thêm nội dung sau:
+```bash
+DATABASE_URL=mongodb+srv://<your_username>:<your_password>@google-oauth-db.ckgb30q.mongodb.net/<your_db_name>?retryWrites=true&w=majority&appName=Google-OAuth-DB
+SECRET=suongrongdomladomhoanuocdongdaytrencaonguyendalangayhoangdetrovenha
+GOOGLE_CLIENT_ID=YOUR_CLIENT_ID
+PORT=5000
+```
+### 4️⃣ Chạy bằng Docker Compose
+Chạy dự án bằng câu lệnh sau ở thư mục chính:
+```bash
+docker compose up --build
+```
